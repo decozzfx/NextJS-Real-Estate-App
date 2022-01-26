@@ -41,7 +41,7 @@ const Search = ({ properties }) => {
 }
 
 export async function getServerSideProps({ query }) {
-   const purpose = query.purpose || 'for-sale'
+   const purpose = query.purpose || 'for-rent'
    const rentFrequency = query.rentFrequency || 'yearly'
    const minPrice = query.minPrice || '0'
    const maxPrice = query.maxPrice || '1000000'
